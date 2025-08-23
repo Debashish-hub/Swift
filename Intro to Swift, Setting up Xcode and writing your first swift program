@@ -1,0 +1,25 @@
+
+
+print("Hello Debashish")
+
+
+//var name = "Debashish"
+//name = "Ashutosh"
+//name = "Soumya"
+
+let pi = 3.14
+
+
+// datatypes
+
+//Int
+//Bool
+//String
+
+var age: Int = 24
+var isStudent: Bool = true
+var greeting = "Hello, World!"
+var name = "Debashish"
+
+print(greeting)
+print("My name is \(name) and I am \(age) years old.")
