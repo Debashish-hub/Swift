@@ -1,0 +1,91 @@
+// Suppose you are checking student's scores and want to assign grades based on their scores.
+
+
+let score = 40
+
+if score >= 90 {
+    print("A")
+} else if score >= 80 {
+    print("B")
+} else {
+    print("C")
+}
+
+// Swift also supports logical operators like AND (&&), OR (||), NOT (!), EQUAL (==), and NOT EQUAL (!=).
+
+// Example
+
+let isMember = false
+let hasCoupon = false
+
+if isMember || hasCoupon {
+    print("You get a discount!")
+} else {
+    print("No discount available.")
+}
+
+
+// Switch Statement - Multiple Cases
+
+// Example
+let day = "Monday"
+
+switch day {
+case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday":
+    print("It's a weekday.")
+case "Saturday", "Sunday":
+    print("It's the weekend!")
+default:
+    print("Not a valid day.")
+}
+
+
+let mark = 90
+
+switch mark {
+case 90...100:
+    print("Grade: A")
+case 80..<90:
+    print("Grade: B")
+case 70..<80:
+    print("Grade: C")
+default:
+    print("Grade: D")
+}
+
+
+// For Loop - Iterating over a range of numbers
+
+for i in 1...5 {
+    print("Iteration \(i)")
+}
+
+
+for j in 1..<5 {
+    print("Iteration \(j)")
+}
+
+
+// While loop - executes a block of code as long as a specified condition is true
+
+var counter = 1
+
+while counter <= 5 {
+    print("Hello, World!")
+    counter += 1
+}
+
+
+// Repeat-While loop - executes a block of code once, and then repeats the execution as long as a specified condition is true
+
+var repeatCounter = 1
+
+repeat {
+    print("Hello, Swift!")
+    repeatCounter += 1
+} while repeatCounter <= 5
+
+
+// What is the difference between while and repeat-while?
+
+// Write code that prints only even numbers from 1 to 10 using a for loop.
