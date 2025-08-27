@@ -1,0 +1,60 @@
+/// FUNCTION
+//A function is a reusable block of code that does one job.
+//Instead of repeating yourself, you define it once, and call it anywhere.
+
+
+func greet() {
+    print("Hello, World!")
+}
+greet()
+
+// FUnctions with Parameters
+
+//func greetUser(name: String) {
+//    print("Hello, \(name)!")
+//}
+//
+//greetUser(name: "Debashish")
+//greetUser(name: "Swift")
+
+// Functions with Return Values
+
+func square(of number: Int) -> Int {
+    return number * number
+}
+
+let result = square(of: 10)
+print(result)
+
+
+// Multiple parameters
+func add(_ a: Int, _ b: Int) -> Int {
+    return a + b
+}
+
+print(add(10, 20))
+
+
+// Functions with Default Parameter Values
+
+func greetUser(name: String = "Guest") {
+    print("Welcome, \(name)!")
+}
+
+greetUser()
+greetUser(name: "Debashish")
+
+// Functions with Multiple Return Values
+
+func minMax(numbers: [Int]) -> (min: Int, max: Int) {
+    let minVal = numbers.min() ?? 0
+    let maxVal = numbers.max() ?? 0
+    return (minVal, maxVal)
+}
+
+let minMaxNum = minMax(numbers: [3, 7, 1, 9, 10, 0])
+print("Min: \(minMaxNum.min), Max: \(minMaxNum.max)")
+
+
+// Write a function to return a table of 2
+
