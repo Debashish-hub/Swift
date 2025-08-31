@@ -1,0 +1,59 @@
+//What are Optionals?
+//
+// In Swift, an Optional is a type that can hold either a value or no value at all (nil).
+
+var name: String? = "Debashish"
+print(name)
+
+
+// Declaring Optionals
+//1
+
+var newName: String? = "Debashish"
+
+// 2
+var nickname: String? = nil
+
+
+// Unwrapping Optionals
+
+//1 Optional Binding with if let
+
+if let actualName = nickname {
+    print("Hello, \(actualName)")
+} else {
+    print("No name provided")
+}
+
+// 2. Guard let // Used mosylt in functions
+
+func greet(user: String?) {
+    guard let userName = user else {
+        print("No user found")
+        return
+    }
+    print("Welcome, \(userName)")
+}
+
+greet(user: "Swift")
+
+// 3. Force Unwrapping
+
+print(name!)
+
+//  Nil Coalescing Operator - ??
+
+let userNickname: String? = nil
+let displayName = userNickname ?? "Guest"
+print(displayName)
+
+
+// Optional are very powerful
+
+//Optionals make Swift safe.
+// Instead of unexpected crashes, Optionals force us to handle missing values properly.
+
+
+// Challenge
+
+//Challenge for you: Try writing a function that takes an Optional name and greets the user, but if no name is provided, it says ‘Hello, Guest’. Post it in the comments — I’ll check them out
