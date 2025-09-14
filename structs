@@ -1,0 +1,59 @@
+// Structs in Swift
+
+// Structs, short for Structures, are like blueprints for creating your own data types. They allow you to group related properties and behaviors together.
+
+struct Student {
+    var name: String
+    var age: Int
+    var grade: String
+}
+
+var student1 = Student(name: "Alice", age: 20, grade: "A")
+print(student1.name)
+
+//Struct Properties
+//“Structs can have stored properties like we saw, but they can also have computed properties.”
+
+
+struct Rectangle {
+    var width: Double
+    var height: Double
+    var area: Double {
+        return width * height
+    }
+}
+
+
+//Struct Methods
+//“Structs can also have functions inside them, called methods.”
+
+
+struct Circle {
+    var radius: Double
+    func getArea() -> Double {
+        return 3.14 * radius * radius
+    }
+}
+
+
+//Mutating Methods
+//“By default, structs are value types in Swift, meaning their data is copied, not shared. So if you want to modify data inside a struct, you need a mutating method.”
+
+
+struct Counter {
+    var count = 0
+    mutating func increment() {
+        count += 1
+    }
+}
+
+
+//Structs vs Classes (Quick Intro)
+
+//“You might be wondering: how are structs different from classes? We’ll cover this in detail later, but here’s the key:
+//Structs are value types.
+//
+//
+//Classes are reference types.
+
+// Create a struct for you own use
